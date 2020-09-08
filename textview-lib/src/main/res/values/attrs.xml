@@ -3,26 +3,25 @@
 
     <declare-styleable name="SuperTextView">
         <attr name="open_reset_switch" format="boolean|reference"/>
-        <attr name="bg_gradient_orientation" format="enum">
+        <attr name="hzw_bg_gradient_orientation" format="enum">
             <enum name="left_right" value="0"/>
             <enum name="right_left" value="1"/>
             <enum name="top_bottom" value="2"/>
             <enum name="bottom_top" value="3"/>
         </attr>
-        <attr name="bg_gradient_start_color" format="color"/>
-        <attr name="bg_gradient_center_color" format="color"/>
-        <attr name="bg_gradient_end_color" format="color"/>
-        <attr name="stroke_width" format="dimension"/>
-        <attr name="stroke_color" format="color"/>
-        <attr name="normal_color" format="color"/>
-        <attr name="disable_color" format="color"/>
-        <attr name="pressed_color" format="color"/>
-        <attr name="pressed_text_color" format="color"/>
-        <attr name="radius" format="dimension"/>
-        <attr name="radius_left_top" format="dimension"/>
-        <attr name="radius_right_top" format="dimension"/>
-        <attr name="radius_right_bottom" format="dimension"/>
-        <attr name="radius_left_bottom" format="dimension"/>
+        <attr name="hzw_bg_gradient_start_color" format="color"/>
+        <attr name="hzw_bg_gradient_center_color" format="color"/>
+        <attr name="hzw_bg_gradient_end_color" format="color"/>
+        <attr name="hzw_stroke_width" format="dimension"/>
+        <attr name="hzw_stroke_color" format="color"/>
+        <attr name="hzw_normal_color" format="color"/>
+        <attr name="hzw_disable_color" format="color"/>
+        <attr name="hzw_pressed_color" format="color"/>
+        <attr name="hzw_radius" format="dimension"/>
+        <attr name="hzw_radius_left_top" format="dimension"/>
+        <attr name="hzw_radius_right_top" format="dimension"/>
+        <attr name="hzw_radius_right_bottom" format="dimension"/>
+        <attr name="hzw_radius_left_bottom" format="dimension"/>
 
     </declare-styleable>
 ></resources>

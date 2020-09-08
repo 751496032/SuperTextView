@@ -14,7 +14,7 @@
         <attr name="hzw_bg_gradient_end_color" format="color"/>
         <attr name="hzw_stroke_width" format="dimension"/>
         <attr name="hzw_stroke_color" format="color"/>
-        <attr name="hzw_normal_color" format="color"/>
+        <attr name="hzw_normal_fill_color" format="color"/>
         <attr name="hzw_disable_color" format="color"/>
         <attr name="hzw_pressed_color" format="color"/>
         <attr name="hzw_radius" format="dimension"/>

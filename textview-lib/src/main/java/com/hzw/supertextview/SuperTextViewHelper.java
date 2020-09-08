@@ -74,7 +74,7 @@ public class SuperTextViewHelper {
         int startColor = typedArray.getColor(R.styleable.SuperTextView_hzw_bg_gradient_start_color, 0);
         int centerColor = typedArray.getColor(R.styleable.SuperTextView_hzw_bg_gradient_center_color, 0);
         int endColor = typedArray.getColor(R.styleable.SuperTextView_hzw_bg_gradient_end_color, 0);
-        int normalColor = typedArray.getColor(R.styleable.SuperTextView_hzw_normal_color, 0);
+        int normalColor = typedArray.getColor(R.styleable.SuperTextView_hzw_normal_fill_color, 0);
         int disableColor = typedArray.getColor(R.styleable.SuperTextView_hzw_disable_color, 0);
         int pressedColor = typedArray.getColor(R.styleable.SuperTextView_hzw_pressed_color, 0);
         mStrokeColor = typedArray.getColor(R.styleable.SuperTextView_hzw_stroke_color, 0);

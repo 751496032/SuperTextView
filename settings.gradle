@@ -1,0 +1,2 @@
+include ':app', ':textview-lib'
+rootProject.name='SuperTextView'

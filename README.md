@@ -21,7 +21,7 @@
 - drawableBottom
 
 
-这个是`SuperTextView`功能点之一，还提供了自定义属性来设置TextView的背景、圆角、边框、渐变、触发状态这些常规需求。
+这个是`SuperTextView`功能点之一，还提供了自定义属性来设置TextView的快速实现圆角背景，设置渐变色背景，给控件描边，为控件增加状态图，添加按压时背景变色效果。
 
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0908/203855_7d7653ca_553126.png "屏幕截图.png")
 
@@ -68,9 +68,13 @@ allprojects{
 项目依赖配置：
 
 ```
-com.gitee.common-apps:SuperTextView:1.0.0
+dependencies {
+	implementation 'com.gitee.common-apps:SuperTextView:版本号'
+}
 ```
 
+最新版本：
 
+[![](https://jitpack.io/v/com.gitee.common-apps/SuperTextView.svg)](https://jitpack.io/#com.gitee.common-apps/SuperTextView)
 
 

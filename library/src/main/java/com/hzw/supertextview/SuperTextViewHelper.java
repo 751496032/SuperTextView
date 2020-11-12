@@ -109,8 +109,8 @@ public class SuperTextViewHelper {
                 mNormalBGDrawable.setOrientation(GradientDrawable.Orientation.BOTTOM_TOP);
                 break;
         }
-        createDisableDrawable(disableColor, radius, cornerRadius);
-        createPressedDrawable(pressedColor, radius, cornerRadius);
+        initDisableDrawable(disableColor, radius, cornerRadius);
+        initPressedDrawable(pressedColor,radius, cornerRadius);
 
         int pressed = android.R.attr.state_pressed;
         int enabled = android.R.attr.state_enabled;
@@ -127,7 +127,7 @@ public class SuperTextViewHelper {
 
     }
 
-    private void createDisableDrawable(int disableColor, int radius, float[] cornerRadius) {
+    private void initDisableDrawable(int disableColor, int radius, float[] cornerRadius) {
         //禁止状态
         if (mDisableDrawable == null) {
             mDisableDrawable = new GradientDrawable();
@@ -136,11 +136,16 @@ public class SuperTextViewHelper {
         setFillColor(mDisableDrawable, disableColor, null);
     }
 
-    private void createPressedDrawable(int pressedColor, int radius, float[] cornerRadius) {
+    private void initPressedDrawable(int pressedColor, int radius, float[] cornerRadius) {
         //手指按下的状态
-        if (mPressedDrawable == null) {
-            mPressedDrawable = new GradientDrawable();
+        if (pressedColor!=0){
+            if (mPressedDrawable == null) {
+                mPressedDrawable = new GradientDrawable();
+            }
+        }else {
+            mPressedDrawable=mNormalBGDrawable;
         }
+        mPressedDrawable.setStroke(mStrokeWidth, mStrokeColor);
         setCornerRadius(mPressedDrawable, radius, cornerRadius);
         setFillColor(mPressedDrawable, pressedColor, null);
     }

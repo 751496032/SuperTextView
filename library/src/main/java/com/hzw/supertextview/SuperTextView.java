@@ -5,6 +5,7 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.drawable.GradientDrawable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -20,20 +21,29 @@ public class SuperTextView extends TextView {
 
     private SuperTextViewHelper mTextViewHelper;
 
-
     public SuperTextView(Context context) {
-        this(context, null);
+        super(context);
+        init(null);
     }
 
     public SuperTextView(Context context, @Nullable AttributeSet attrs) {
-        this(context, attrs, 0);
+        super(context, attrs);
+        init(attrs);
     }
 
     public SuperTextView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        init(attrs);
+    }
 
+    public SuperTextView(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+        super(context, attrs, defStyleAttr, defStyleRes);
+        init(attrs);
+    }
+
+
+    private void init(@Nullable AttributeSet attrs) {
         mTextViewHelper = new SuperTextViewHelper(this, attrs);
-
     }
 
 
@@ -48,15 +58,18 @@ public class SuperTextView extends TextView {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
+        if (mTextViewHelper!=null)
         mTextViewHelper.draw(canvas);
     }
 
 
     public GradientDrawable getBackgroundDrawable() {
+        if (mTextViewHelper==null) return null;
         return mTextViewHelper.getBackgroundDrawable();
     }
 
     public void setBackgroundDrawable(GradientDrawable bgDrawable) {
+        if (mTextViewHelper==null) return;
         mTextViewHelper.setBackgroundDrawable(bgDrawable);
         setBackground(bgDrawable);
     }

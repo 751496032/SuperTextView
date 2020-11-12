@@ -1,2 +1,2 @@
-include ':app', ':textview-lib'
+include ':app', ':library'
 rootProject.name='SuperTextView'

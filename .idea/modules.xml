@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SuperTextView.iml" filepath="$PROJECT_DIR$/SuperTextView.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/textview-lib/textview-lib.iml" filepath="$PROJECT_DIR$/textview-lib/textview-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SuperTextView.iml" filepath="$PROJECT_DIR$/SuperTextView.iml" group="SuperTextView" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="SuperTextView/app" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" group="SuperTextView/library" />
     </modules>
   </component>
 </project>

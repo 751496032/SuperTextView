@@ -22,14 +22,15 @@
         app:hzw_radius="10dp"
         app:hzw_stroke_color="@android:color/holo_blue_bright"
         app:hzw_stroke_width="3dp"
+        app:hzw_pressed_color="@color/colorAccent"
         android:layout_margin="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 
     <TextView
+        android:id="@+id/bottom_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -42,5 +43,18 @@
         app:layout_constraintTop_toBottomOf="@+id/text"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@+id/bottom_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

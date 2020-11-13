@@ -22,10 +22,10 @@ allprojects {
         jcenter()
         maven {
             url 'https://jitpack.io'
-            credentials {
-                username = 'HZWei'
-                password = 'd6ec6a364abf5642ad9a95f862aa746c'
-            }
+//            credentials {
+//                username = 'HZWei'
+//                password = ''
+//            }
         }
 
     }

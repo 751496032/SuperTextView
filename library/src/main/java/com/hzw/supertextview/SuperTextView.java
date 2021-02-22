@@ -50,6 +50,7 @@ public class SuperTextView extends TextView {
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
+        if (mTextViewHelper!=null)
         mTextViewHelper.updateIcon(this);
 
     }
